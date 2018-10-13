@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meditation Spots</title>
+    <style>
+    #map{
+        height:400px;
+        width: 100%;
+    }
+    
+    </style>
+</head>
+<body>
+<div class="map" id="map"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    
+    function initMap(){
+        // options
+        let options = {
+            zoom:8,
+            center:{lat: 39.9936837,lng:-81.7340168}
+        }
+        //new map
+        let map = new google.maps.Map(document.getElementById('map'),options);
+        //add marker
+        /*let marker = new google.maps.Marker({
+            position:{lat: }
+        });*/
+    }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=sAIzaSyCEUHzoU2Hf21tq6hHGeNhdWc41Rr_jzyk&callback=initMap"
+    async defer></script>    
+</body> 
+</html>
